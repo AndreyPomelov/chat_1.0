@@ -76,6 +76,7 @@ public class Server {
         while (true) {
             // Принимаем сообщение от клиента
             String message = in.readUTF();
+            System.out.println("Client: " + message);
 
             // Отправляем клиенту обратно его же сообщение
             out.writeUTF("Server: " + message);
